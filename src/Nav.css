@@ -1,0 +1,35 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.nav.nav_black {
+    animation-name: scroll-smooth;
+    background-color: #111111;
+    animation-duration: 1s;
+}
+@keyframes scroll-smooth {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+} 
+.nav_logo {
+    height: 50px;
+    object-fit: contain;
+}
+.nav_avatar {
+    height: 50px;
+    object-fit: contain;
+}
